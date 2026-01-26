@@ -1,0 +1,467 @@
+/* Dodavanje fontova */
+@font-face {
+    font-family: "DM Sans";
+    src: url(/font/DM_Sans/static/DMSans-Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DM Sans";
+    src: url(/font/DM_Sans/static/DMSans-Bold.ttf) format("truetype");
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DM Sans";
+    src: url(/font/DM_Sans/static/DMSans-Medium.ttf) format("truetype");
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Red Hat Display";
+    src: url(/font/Red_Hat_Display/static/RedHatDisplay-Bold.ttf);
+    font-weight: 700;
+    font-display: swap;
+}
+
+:root{
+--font-boja-navigacija: white;    
+--font-boja-svetla-tema: black;
+--font-boja-tamna-tema: rgb(255, 255, 245);
+--font-boja-dobrodosli: black;
+--font-boja-pogledaj-sve: black;
+--border-boja: black;
+--dugme-hover-pozadina: black;
+--dugme-hover-boja-font: white;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "DM Sans";
+}
+
+
+
+/* Zaglavlje */
+
+ .zaglavlje-slajder{
+    position: relative;
+    height: 100vh;
+    overflow-y: hidden;
+} 
+
+.zaglavlje-kontejner{
+    position: absolute;
+    overflow-y: hidden;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%; 
+    flex-shrink: 0;
+    
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease-in-out;
+    
+
+
+}
+
+.zaglavlje-kontejner.aktivan{
+    opacity: 1;
+    pointer-events: auto;
+    
+    
+}
+
+.zaglavlje-slika{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.strelica{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    
+}
+
+.strelica img{
+    width: 32px;
+    height: 32px;
+}
+
+.leva-strelica{
+    left: 0px;
+}
+
+.desna-strelica{
+    right: 0px;
+}
+
+.strelica:hover{
+    opacity: 0.7;
+}
+
+.zaglavlje-postavka-info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+.datum-postavke{
+    color: var(--font-boja-navigacija);
+    font-size: 12px;
+    margin-bottom: 0;
+    
+    
+}
+
+.naziv-postavke{
+    color: var(--font-boja-navigacija);
+    font-weight: 500;
+    text-align: center;
+    font-size: 56px;
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+
+.zaglavlje-dugme{
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 500;
+    background-color: white;
+    padding: 12px 40px;
+    border-radius: 32px;
+    border: solid white 1px;
+    margin-top: 24px;
+    cursor: pointer;
+}
+
+.zaglavlje-dugme:hover{
+    background-color: rgb(230, 230, 230);
+    
+}
+
+
+
+/* Dobrodosli sekcija */
+.dobrodosli-sekcija{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(/slike/pozadina.jpg);
+    background-size: cover;
+    background-position-y: -400px;
+    
+}
+
+.dobrodosli-tekst h2{
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-size: 32px;
+    padding-left: 24px;
+    margin-top: 80px;
+    padding-top: 0;
+    color: var(--font-boja-dobrodosli);
+    
+}
+
+.dobrodosli-tekst p{
+    font-family: "DM Sans";
+    font-weight: 500;
+    font-size: 16px;
+    padding-left: 24px;
+    max-width: 700px;
+    color: var(--font-boja-dobrodosli);
+}
+
+.saznaj-vise-dugme{
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.347);
+    padding: 12px 24px;
+    margin-left: 24px;
+    border-radius: 32px;
+    border: solid white 1px;
+    margin-top: 24px;
+    cursor: pointer;
+}
+
+.saznaj-vise-dugme:hover{
+    background-color: rgba(255, 255, 255, 0.45);
+}
+
+/*Postavke*/
+
+.postavke-zaglavlje{
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+}
+
+.postavke-naslov{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding: 0px 8px;
+    border-bottom: solid var(--border-boja) 1px;
+    
+}
+
+.postavke-naslov a{
+    color: var(--font-boja-pogledaj-sve);
+    text-decoration: none;
+    font-family: "DM Sans";
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.postavke-naslov a:hover{
+    text-decoration: underline;
+}
+
+.postavke-naslov h2{
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.postavke-zaglavlje-slika-kontejner{
+    margin-top: 32px;
+    margin-bottom: 32px;
+    
+    height: 200px;
+    width: 100%;
+    
+}
+
+.postavke-zaglavlje-slika-kontejner img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0% 20%;
+    
+}
+
+.postavka-kartica{
+    display: flex;
+    flex-direction: row;
+    margin: 24px;
+    padding-bottom: 32px;
+    border-bottom: solid var(--border-boja) 1px;
+    
+}
+
+.postavka-kartica-leva{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    
+}
+
+.postavka-kartica-leva h2{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.postavka-kartica-leva p{
+    font-size: 12px;
+}
+
+.postavka-kartica-sredina{
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+.postavka-kartica-desna{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 8px;
+    padding-bottom: 10px;
+}
+
+.vise-informacija{
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-weight: 500;
+    background-color: transparent;
+    padding: 12px 24px;
+    border-radius: 32px;
+    border: solid var(--border-boja) 1px;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+    color: var(--font-boja-svetla-tema);
+}
+
+.vise-informacija:hover{
+    background-color: var(--dugme-hover-pozadina);
+    color: var(--dugme-hover-boja-font);
+}
+
+/*Informacije o poseti*/
+
+.informacije-o-poseti{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    margin-top: 48px;
+    margin-bottom: 0;
+    background-color: black;
+    color: white;
+}
+
+.informacije-o-poseti-slika{
+    background-image: url(/slike/muzej.jpg);
+    background-position: 50% 50%;
+    flex: 50%;
+}
+
+.informacije-o-poseti-podaci{
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    gap: 24px;
+    
+}
+
+.informacije-o-poseti-podaci h2{
+    text-align: center;
+    margin-top: 48px;
+}
+
+.informacije-o-poseti-podaci a{
+    color: white;
+    text-decoration: none;
+    font-family: "DM Sans";
+    font-weight: 700;
+    margin-top: 16px;
+    align-self: flex-start;
+    margin-left: 134px;
+}
+
+.informacije-o-poseti-podaci a:hover{
+    text-decoration: underline;
+}
+
+.informacije-o-poseti table{
+    width: 70%;
+    margin-left: 80px;
+    
+}
+
+.informacije-o-poseti thead{
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    border-bottom: solid white 1px;
+}
+
+.informacije-o-poseti th{
+    padding: 16px 0;
+}
+
+.informacije-o-poseti td{
+    padding: 8px 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .datum-postavke {font-size: 6px;}
+    .naziv-postavke {font-size: 24px;
+    margin-top: 8px;}
+    .zaglavlje-dugme {font-size: 12px;
+    padding: 8px 24px;
+    margin-top: 16px;}
+    .dobrodosli-sekcija h2 {font-size: 24px;}
+    .dobrodosli-sekcija p {font-size: 12px;}
+    .dobrodosli-sekcija {background-position-y: 0px;}
+    .postavka-kartica-leva h2 {font-size: 16px;}
+    .postavka-kartica-leva p {font-size: 8px;}
+    .postavka-kartica-sredina {display: none;}
+    .vise-informacija {font-size: 12px;}
+    .informacije-o-poseti-slika {display: none;}
+    .informacije-o-poseti th {padding: 8px 0;}
+    .informacije-o-poseti h2 {font-size: 24px;
+    margin-top: 24px;}
+    .informacije-o-poseti-podaci {gap: 16px;}
+    
+    
+    
+}
+
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+    .datum-postavke {font-size: 8px;}
+    .naziv-postavke {font-size: 30px;
+    margin-top: 16px;}
+    .zaglavlje-dugme {font-size: 16px;
+    padding: 14px 32px;
+    margin-top: 16px;}
+    .dobrodosli-sekcija h2 {font-size: 24px;}
+    .dobrodosli-sekcija p {font-size: 12px;}
+    .dobrodosli-sekcija {background-position-y: 0px;}
+    .postavka-kartica-leva h2 {font-size: 16px;}
+    .postavka-kartica-leva p {font-size: 8px;}
+    .postavka-kartica-sredina p {font-size: 12px;}
+    .vise-informacija {font-size: 12px;}
+    .informacije-o-poseti-slika {display: none;}
+    .informacije-o-poseti th {padding: 8px 0;}
+    .informacije-o-poseti h2 {font-size: 24px;
+    margin-top: 24px;}
+    .informacije-o-poseti-podaci {gap: 16px;}
+    
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .datum-postavke {font-size: 12px;}
+    .naziv-postavke {font-size: 40px;}
+    .dobrodosli-sekcija h2 {font-size: 32px;}
+    .dobrodosli-sekcija p {font-size: 16px;}
+    .dobrodosli-sekcija {background-position-y: -200px;}
+    .informacije-o-poseti-podaci {gap: 16px;}
+    .informacije-o-poseti th {padding: 8px 0;}
+    .informacije-o-poseti h2 {margin-top: 24px;}
+    
+}
+
+
+
+
+
+
+
+
+
+

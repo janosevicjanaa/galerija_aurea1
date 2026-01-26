@@ -1,0 +1,180 @@
+/* Dodavanje fontova */
+@font-face {
+    font-family: "DM Sans";
+    src: url(/font/DM_Sans/static/DMSans-Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DM Sans";
+    src: url(/font/DM_Sans/static/DMSans-Bold.ttf) format("truetype");
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DM Sans";
+    src: url(/font/DM_Sans/static/DMSans-Medium.ttf) format("truetype");
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Red Hat Display";
+    src: url(/font/Red_Hat_Display/static/RedHatDisplay-Bold.ttf);
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lora";
+    src: url(/font/Lora/static/Lora-Medium.ttf);
+    font-weight: 500;
+    font-display: swap;
+}
+
+:root{
+--font-boja-navigacija: white;    
+--font-boja-svetla-tema: black;
+--o-nama-pitanje-pozadina: rgb(141, 216, 157);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "DM Sans";
+}
+
+
+
+.zaglavlje-kontejner{
+    width: 100%;
+    height: 70vh;
+}
+
+.zaglavlje-kontejner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 100% 35%;
+}
+
+.zaglavlje-naslov h2{
+    margin: 48px 24px 16px 24px;
+    font-size: 40px;
+}
+
+.zaglavlje-naslov hr{
+    margin: 0 24px;
+    color: black;
+    height: 1px;
+}
+
+
+/*Tekst*/
+
+.citat p{
+    font-family: 'Lora';
+    font-size: 32px;
+    text-align: center;
+    margin: 80px 32px 0px 32px;
+    
+}
+
+.o-nama-tekst-gornji, .o-nama-tekst-donji{
+    padding: 32px 32px 0px 32px;
+    margin: 32px 120px;
+    
+    
+}
+
+.o-nama-tekst-gornji p{
+    font-size: 18px;
+    column-count: 2;
+    column-gap: 24px;
+}
+
+.o-nama-slika{
+    height: 50vh;
+    margin: 24px 120px;
+}
+
+.o-nama-slika img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.o-nama-tekst-donji{
+    font-size: 18px;
+    column-count: 2;
+    column-gap: 24px;
+    
+}
+
+.pitanje-sekcija{
+    background-color: var(--o-nama-pitanje-pozadina);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 120px;
+    margin-bottom: 0;
+}
+
+.pitanje-sekcija p{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.pitanje-sekcija a{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--font-boja-svetla-tema);
+    text-decoration: none;
+}
+
+.pitanje-sekcija a:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    .citat p {font-size: 24px;}
+    .o-nama-tekst-gornji p {font-size: 12px;
+        columns: 1;
+        column-gap: 12px;
+        text-align: center;
+    }
+    .o-nama-tekst-gornji, .o-nama-tekst-donji {padding: 12px;
+    margin: 12px;}
+    .o-nama-tekst-donji p {columns: 1;
+    font-size: 12px;}
+    .o-nama-slika {margin: 24px 60px;}
+    .pitanje-sekcija {padding: 12px 32px;}
+    .pitanje-sekcija p { font-size: 18px;}
+    .pitanje-sekcija a {font-size: 12px;}
+
+    
+    
+    
+    
+}
+
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+    .o-nama-tekst-gornji, .o-nama-tekst-donji { padding: 12px;
+    margin: 12px;}
+    .o-nama-slika {margin: 24px 60px;}
+    .pitanje-sekcija {padding: 12px 32px;}
+    .pitanje-sekcija p { font-size: 20px;}
+    .pitanje-sekcija a {font-size: 16px;}
+    
+}
+
+
+

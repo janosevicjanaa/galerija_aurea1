@@ -1,0 +1,233 @@
+/* Navigacija */
+:root{
+    --font-boja-navigacija: white; 
+    --font-boja-svetla-tema: black;
+}
+
+.zakljucaj-skrol{
+    overflow: hidden;
+}
+
+nav{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    flex: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 24px;
+    color: var(--font-boja-navigacija);
+    border-bottom: 1px solid var(--font-boja-navigacija);
+}
+
+.navigacija-leva{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+}
+
+.prazan-div{
+    width: 70px;
+}
+
+.hamburger-meni{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    margin-left: 24px;
+    cursor: pointer;
+}
+
+.hamburger-meni span{
+    height: 5px;
+    width: 100%;
+    background-color: var(--font-boja-navigacija);
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+
+.hamburger-meni span:nth-child(1){
+    top: 25%;
+}
+
+.hamburger-meni span:nth-child(3){
+    top: 75%;
+}
+
+.hamburger-meni.aktivan span:nth-child(1){
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.hamburger-meni.aktivan span:nth-child(2){
+    opacity: 0;
+}
+
+.hamburger-meni.aktivan span:nth-child(3){
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+.hamburger-meni-sadrzaj{
+    background-color: rgba(0, 0, 0, 0.279);
+    backdrop-filter: blur(1px);
+    height: 100vh;
+    width: 100%;
+    max-width: 250px;
+    position: fixed;
+    top: 88px;
+    left: -450px;
+    padding-top: 32px;
+    transition: .3s ease;
+    overflow-y: auto;
+}
+
+.hamburger-meni-sadrzaj.aktivan{
+    left: 0;
+}
+
+.hamburger-meni-sadrzaj a{
+    text-decoration: none;
+    color: var(--font-boja-navigacija);
+    font-weight: 700;
+}
+
+.hamburger-meni-sadrzaj a:hover{
+    text-decoration: underline;
+}
+
+.hamburger-meni-sadrzaj ul{
+    list-style: none;
+    
+}
+
+.hamburger-meni-sadrzaj li{
+    padding-bottom: 32px;
+}
+
+.hamburger-meni-sadrzaj .svetla-tema{
+    margin-left: 32px;
+}
+
+.hamburger-meni-sadrzaj .tamna-tema{
+    margin-left: 32px;
+}
+
+.navigacija-desna{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+}
+
+.navigacija-desna .svetla-tema, .tamna-tema{
+    margin-left: 0px;
+}
+
+
+
+.temaDugme{
+    background-color: transparent;
+    border: none;
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--font-boja-navigacija);
+    cursor: pointer;
+}
+
+.padajuci-meni{
+    position: relative;
+}
+
+.padajuci-meni-sadrzaj{
+    position: absolute;
+    top: 100%;
+    right: -20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: solid var(--font-boja-navigacija) 1px;
+    border-image: linear-gradient(to top, var(--font-boja-navigacija) 75%, transparent 75%);
+    border-image-slice: 1;
+    border-top: none;
+    padding: 32px 16px 8px 16px;
+    display: none;
+}
+
+.svetla-tema, .tamna-tema{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.svetla, .tamna{
+    background-color: transparent;
+    color: var(--font-boja-navigacija);
+    border: none;
+    font-family: "DM Sans";
+    font-weight: 400;
+    font-size: 16px;
+    padding: 16px 8px;
+    cursor: pointer;
+}
+
+.navigacija-link{
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--font-boja-navigacija);
+    
+}
+
+.navigacija-sredina h2{
+    font-family: "Red Hat Display";
+    font-weight: 700;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.navigacija-link:hover,
+.temaDugme:hover{
+    color: rgb(241, 232, 220);
+    text-shadow:
+        0 0 20px #ffffffa1, 
+        0 0 50px #ffffffa1,
+        0 0 0px #ffffffa1;
+}
+
+
+
+.padajuci-meni:hover .padajuci-meni-sadrzaj {display: flex;}
+
+@media only screen and (max-width: 600px) {
+    .hamburger-meni {display: block;}
+    .navigacija-link {display: none;}
+    .temaDugme {display: none;}
+    
+}
+
+@media only screen and (min-width: 600px) {
+    .hamburger-meni {display: block;}
+    .navigacija-link {display: none;}
+    .temaDugme {display: none;}
+    
+}
+
+@media only screen and (min-width: 768px) {
+    .hamburger-meni {display: none;}
+    .navigacija-link {display: block;}
+    .temaDugme {display: block;}
+
+}

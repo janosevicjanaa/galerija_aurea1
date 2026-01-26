@@ -1,0 +1,312 @@
+/* Dodavanje fontova */
+@font-face {
+    font-family: "DM Sans";
+    src: url(/font/DM_Sans/static/DMSans-Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DM Sans";
+    src: url(/font/DM_Sans/static/DMSans-Bold.ttf) format("truetype");
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DM Sans";
+    src: url(/font/DM_Sans/static/DMSans-Medium.ttf) format("truetype");
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Red Hat Display";
+    src: url(/font/Red_Hat_Display/static/RedHatDisplay-Bold.ttf);
+    font-weight: 700;
+    font-display: swap;
+}
+
+:root{
+--font-boja-navigacija: white;    
+--font-boja-svetla-tema: black;
+--font-boja-umetnica: rgba(0, 0, 0, 0.55);
+--border-boja: black;
+--dugme-hover-pozadina: black;
+--dugme-hover-boja-font: white;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "DM Sans";
+}
+
+
+
+.zaglavlje-kontejner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.zaglavlje-kontejner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.zaglavlje-kontejner h2{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    color: white;
+    font-size: 48px;
+    text-align: center;
+}
+
+/*Informacije o umetnici*/
+.umetnica-info-kontejner{
+    display: flex;
+    flex-direction: row;
+    margin: 80px 24px 112px 48px;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+
+.umetnica-info-leva{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 56px;
+}
+
+.umetnica-info-leva h2{
+    font-size: 40px;
+    margin: 0 0 24px 0;
+    padding: 0;
+}
+
+.umetnica-info-leva img{
+    height: 300px;
+    width: 250px;
+}
+
+.umetnica-info-desna{
+    flex: 50%;
+    columns: 2 20px;
+    column-gap: 56px;
+    
+
+}
+
+.umetnica-info-desna p{
+    font-size: 14px;
+    color: var(--font-boja-umetnica);
+}
+
+/*Informacije o izlozbi*/
+.info-o-izlozbi-kontejner{
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    margin: 0px 24px 0px 48px;
+   
+    
+}
+
+.info-o-izlozbi-leva{
+    flex: 1;
+    min-width: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    
+}
+
+.info-o-izlozbi-leva h2{
+    font-size: 32px;
+    margin: 0;
+    padding-top: 40px;
+}
+
+.datum-izlozbe{
+    font-weight: 500;
+}
+
+.tekst-o-izlozbi{
+    font-size: 14px;
+    color: var(--font-boja-umetnica);
+    
+    
+}
+
+.info-o-izlozbi-desna{
+    flex: 1;
+    min-width: 0;
+    
+    
+}
+
+.info-o-izlozbi-desna img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/*Istrazite slicne postavke sekcija*/
+.istrazite-kontejner{
+    display: flex;
+    flex-direction: column;
+    margin: 112px 24px 64px 24px;
+}
+
+.istrazite-naslov{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.istrazite-naslov h2{
+    font-size: 28px;
+}
+
+.pogledajte-sve{
+    text-decoration: none;
+    color: var(--font-boja-svetla-tema);
+    font-weight: 400;
+}
+
+.pogledajte-sve:hover{
+    text-decoration: underline;
+}
+
+.istrazite-kartice-kontejner{
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+}
+
+.kartica{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    
+    
+    
+}
+
+.kartica h2{
+    margin-top: 16px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.kartica p{
+    margin-top: 8px;
+    padding: 0;
+    font-size: 14px;
+    
+}
+
+.kartica img{
+    aspect-ratio: 4/3;
+    width: 100%;
+    object-fit: cover;
+}
+
+.vise-informacija{
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-weight: 500;
+    background-color: transparent;
+    padding: 12px 24px;
+    margin: 8px 180px 16px 0;
+    border-radius: 32px;
+    border: solid var(--border-boja) 1px;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+    color: var(--font-boja-svetla-tema);
+}
+
+.vise-informacija:hover{
+    background-color: var(--dugme-hover-pozadina);
+    color: var(--dugme-hover-boja-font);
+}
+
+#o-umetnici,
+#naziv-postavke,
+#ime-umetnice,
+#tekst-o-izlozbi,
+#postavka-stavke,
+#kartica-naslov-prva,
+#kartica-naslov-druga,
+#kartca-naslov-treca {
+  white-space: pre-line;
+}
+
+@media only screen and (max-width: 600px) {
+    .umetnica-info-leva h2 {font-size: 24px;}
+    .umetnica-info-desna  {columns: 1;}
+    .umetnica-info-kontejner {flex-direction: column;
+    }
+    .info-o-izlozbi-leva h2 {font-size: 24px;}
+    .datum-izlozbe {font-size: 12px;}
+    .tekst-o-izlozbi {font-size: 12px;
+    }
+    .info-o-izlozbi-kontejner {flex-direction: column;}
+    .istrazite-kartice-kontejner {flex-direction: column;}
+    .istrazite-naslov h2 {font-size: 18px;}
+    .istrazite-naslov a {font-size: 14px;}
+    .kartica h2 {font-size: 16px;}
+    .kartica p {font-size: 12px;}
+    
+
+    
+    
+    
+    
+}
+
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+    .umetnica-info-leva h2 {font-size: 24px;}
+    .umetnica-info-desna  {columns: 1;}
+    .umetnica-info-kontejner {flex-direction: column;
+    }
+    .info-o-izlozbi-leva h2 {font-size: 24px;}
+    .datum-izlozbe {font-size: 12px;}
+    .tekst-o-izlozbi {font-size: 12px;
+    }
+    .info-o-izlozbi-kontejner {flex-direction: column;}
+    .istrazite-kartice-kontejner {flex-direction: column;}
+    .istrazite-naslov h2 {font-size: 18px;}
+    .istrazite-naslov a {font-size: 14px;}
+    .kartica h2 {font-size: 16px;}
+    .kartica p {font-size: 12px;}
+    
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1199px) {
+    .info-o-izlozbi-leva {min-width: 600px;}
+    .istrazite-kartice-kontejner {flex-direction: column;}
+}
+
+@media only screen and (min-width: 991px) {
+    .info-o-izlozbi-leva {min-width: 600px;}
+}
+
+
+
+
+

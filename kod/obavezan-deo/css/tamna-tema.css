@@ -1,0 +1,34 @@
+:root{
+    --font-boja-tamna-tema: rgb(255, 255, 245);
+}
+
+.promeni-temu{
+    background-color: rgb(11, 11, 11);
+    color: var(--font-boja-tamna-tema);
+    --font-boja-navigacija: var(--font-boja-svetla-tema);
+    --font-boja-svetla-tema: var(--font-boja-tamna-tema);
+    --font-boja-dobrodosli: black;
+    --font-boja-pogledaj-sve: var(--font-boja-tamna-tema);
+    --border-boja:var(--font-boja-tamna-tema);
+    --dugme-hover-pozadina: white;
+    --dugme-hover-boja-font: black;
+    --o-nama-pitanje-pozadina: rgb(11, 32, 14);
+    --posaljite-poruku-dugme-border: var(--font-boja-tamna-tema);
+    --posaljite-poruku-dugme-pozadina: var(--font-boja-tamna-tema);
+    --posaljite-poruku-dugme-font-boja: black;
+    --posaljite-poruku-dugme-hover-pozadina: rgb(222, 222, 222);
+    --kontakt-border-boja: rgba(255, 255, 255, 0.546);
+    --input-pozadina: rgb(11, 11, 11);
+    --input-teks: var(--font-boja-tamna-tema);
+    --font-boja-umetnica: rgba(255, 255, 255, 0.55);
+    
+
+}
+
+.promeni-temu .drustvene-mreze-ikonice img{
+    filter: invert(1);
+}
+
+body, p, h2, button {
+    transition: 0.2s ease;
+}

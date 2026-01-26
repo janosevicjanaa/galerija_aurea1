@@ -1,0 +1,78 @@
+/*Podnozje*/
+
+.podnozje-kontejner{
+    background-color: black;
+    color: white;
+    padding: 32px 24px;
+}
+
+.podnozje-kontejner p{
+    font-weight: 400;
+}
+
+.podnozje-glavno{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 80px;
+    
+}
+
+.podnozje-leva h2{
+    font-size: 32px;
+}
+
+.podnozje-leva a{
+    text-decoration: none;
+    color: white;
+    font-family: "DM Sans";
+    font-weight: 400;
+}
+
+.podnozje-desna td{
+    padding-right: 40px;
+    padding-bottom: 16px;
+
+}
+
+.podnozje-desna thead{
+    font-weight: 700;
+    
+}
+
+.podnozje-desna a{
+    text-decoration: none;
+    color: white;
+}
+
+.podnozje-desna a:hover{
+    text-decoration: underline;
+}
+
+hr{
+    width: 100%;
+    height: 0.5px;
+    color: rgba(255, 255, 255, 0.272);
+}
+
+.podnozje-donje{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.podnozje-donje-levo{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    height: 16px;
+   
+    
+}
+
+.podnozje-donje-levo img{
+    cursor: pointer;
+}
