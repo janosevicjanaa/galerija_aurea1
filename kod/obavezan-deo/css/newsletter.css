@@ -2,7 +2,7 @@
 .newsletter{
     margin-top: 0;
     height: 70vh;
-    background-image: url(/slike/newsletter-slika.jpeg);
+    background-image: url(../../../slike/newsletter-slika.jpeg);
     background-size: cover;
     background-position-y: 50%; 
     color: white;
