@@ -1,4 +1,4 @@
-fetch("/kod/obavezan-deo/html/navigacija.html")
+fetch("kod/obavezan-deo/html/navigacija.html")
 .then(response => response.text())
 .then(data => {
     document.getElementById("navigacija").innerHTML = data;
@@ -40,7 +40,7 @@ fetch("/kod/obavezan-deo/html/navigacija.html")
 
 
 
-fetch("/kod/obavezan-deo/html/newsletter.html")
+fetch("kod/obavezan-deo/html/newsletter.html")
 .then(response => response.text())
 .then(data => {
 
@@ -100,7 +100,7 @@ fetch("/kod/obavezan-deo/html/newsletter.html")
     }
 });
 
-fetch("/kod/obavezan-deo/html/podnozje.html")
+fetch("kod/obavezan-deo/html/podnozje.html")
 .then(response => response.text())
 .then(data => {
     document.getElementById("podnozje").innerHTML = data;
