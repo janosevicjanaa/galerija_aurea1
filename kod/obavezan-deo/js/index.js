@@ -1,7 +1,7 @@
 
 
 document.getElementById("dobrodosliDugme").addEventListener('click', function(){
-    window.location.href = "/kod/obavezan-deo/html/o nama.html";
+    window.location.href = "/kod/obavezan-deo/html/o-nama.html";
 });
 
 const slajdovi = document.querySelectorAll(".zaglavlje-kontejner");
