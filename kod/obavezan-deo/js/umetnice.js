@@ -10,12 +10,12 @@ if(!imeUmetnice){
 
 const umetnice = {
     artemizija: {
-        zaglavljeSlika: `/slike/artemiyija-djentileski/1465px-Jael_and_Sisera_by_Artemisia_Gentileschi.jpg`,
+        zaglavljeSlika: `/galerija_aurea1/slike/artemiyija-djentileski/1465px-Jael_and_Sisera_by_Artemisia_Gentileschi.jpg`,
         nazivPostavke: `Artemizija Đentileski
         Snaga i Pravda`,
         imeUmetnice: `ARTEMIZIJA
         ĐENTILESKI`,
-        portretUmetnice: `/slike/artemiyija-djentileski/Artemisia_Gentileschi_-_Self-Portrait_as_a_Lute_Player.jpg`,
+        portretUmetnice: `/galerija_aurea1/slike/artemiyija-djentileski/Artemisia_Gentileschi_-_Self-Portrait_as_a_Lute_Player.jpg`,
         oUmetnici: `Artemizija Đentileski (ital. Artemisia Gentileschi; Rim, 8. jul 1593 — Napulj, 1653) bila je italijanska slikarka. Mnoge njene slike prikazuju žene iz mitova, alegorija i Biblije, uključujući žrtve, samoubice i ratnike. Bila je poznata po tome što je prikazivala žensku figuru sa velikim naturalizmom i po njenoj veštini rukovanja bojom kako bi izrazila dimenziju i dramu.
                     
         U svet slikarstva i umetnosti ušla je zahvaljujući svom ocu - slikaru Oraciju Đentileskiju, koji je podsticao njen talent, učio je da posmatra i primećuje svet oko sebe, meša boje i mašta. Naučila je da crta, kako da meša boje i kako da slika. Do 1612, kada je imala 18 godina, Artemizija je bila poznata po svojim primernim talentima, a njen otac se hvalio da je, uprkos tome što se bavila slikanjem samo tri godine, Artemizija bila daleko najbolja.
@@ -40,16 +40,16 @@ const umetnice = {
         -Analizu baroknog dramatizma kroz svetlo, kolorit i izražajnu gestikulaciju
                     
         -Kontekst umetničkog i društvenog položaja žene u Evropi XVII veka`,
-        postavkaSlika: `/slike/artemiyija-djentileski/Judit_decapitando_a_Holofernes,_por_Artemisia_Gentileschi.jpg`,
-        karticaSlikaPrva: `/slike/judith-leyster/Judith_Leyster_The_Concert.jpg`,
+        postavkaSlika: `/galerija_aurea1/slike/artemiyija-djentileski/Judit_decapitando_a_Holofernes,_por_Artemisia_Gentileschi.jpg`,
+        karticaSlikaPrva: `/galerija_aurea1/slike/judith-leyster/Judith_Leyster_The_Concert.jpg`,
         karticaNaslovPrva: `Džudit Lejster
                             Portreti i žanrovske scene`,
         karticaPrvaLink: "dzudit",
-        karticaSlikaDruga: `/slike/elizabet-vize-le-brun/Elisabeth_Louise_Vigée-Le_Brun_-_Juno_Borrowing_the_Belt_of_Venus,_1781.jpg`,
+        karticaSlikaDruga: `/galerija_aurea1/slike/elizabet-vize-le-brun/Elisabeth_Louise_Vigée-Le_Brun_-_Juno_Borrowing_the_Belt_of_Venus,_1781.jpg`,
         karticaNaslovDruga: `Elizabet Viže Lebran
                             Ženski autorski glas u XVIII veku`,
         karticaDrugaLink: "elizabet",
-        karticaSlikaTreca: `/slike/suzane-valadon/1357px-(Barcelona)_The_future_Revealed_or_the_Fortune-Teller_by_Suzanne_Valadon.jpg`,
+        karticaSlikaTreca: `/galerija_aurea1/slike/suzane-valadon/1357px-(Barcelona)_The_future_Revealed_or_the_Fortune-Teller_by_Suzanne_Valadon.jpg`,
         karticaNaslovTreca: `Suzana Valadon
                             Boje i linije slobode`,
         karticaTrecaLink: "suzana"
@@ -58,12 +58,12 @@ const umetnice = {
 
 
     hilma: {
-        zaglavljeSlika: `/slike/hilma-af-klint/Hilma_af_Klint,_1915,_Svanen,_No._17.jpg`,
+        zaglavljeSlika: `/galerija_aurea1/slike/hilma-af-klint/Hilma_af_Klint,_1915,_Svanen,_No._17.jpg`,
         nazivPostavke: `Hilma af Klint
         Između nauke i duhovnosti`,
         imeUmetnice: `HILMA
         AF KLINT`,
-        portretUmetnice: `/slike/hilma-af-klint/Hilma_af_Klint,_portrait_photograph_published_in_1901.jpg`,
+        portretUmetnice: `/galerija_aurea1/slike/hilma-af-klint/Hilma_af_Klint,_portrait_photograph_published_in_1901.jpg`,
         oUmetnici: `Hilma af Klint bila je švedska umetnica i mistik. Njene slike smatraju se neke od prvih apstraktnih dela poznatim u zapadnoj istoriji umetnosti. Značajan deo njenog rada prethodio je prvim čisto apstraktnim slikama Kandinskog, Maleviča i Mondrijana. Pripadala je grupi pod nazivom „Petorka“, koja se sastojala od kruga žena inspirisanih teozofijom, koje su delile zajedničko verovanje u važnost pokušaja da stupe u kontakt sa takozvanim „Visokim gospodarima“— često kroz seanse. Njene slike, koje ponekad podsećaju na dijagrame, bile su vizuelni prikaz složenih duhovnih ideja.
 
         Od svoje porodice Hilma af Klint je nasledila veliko interesovanje za matematiku i botaniku. Pokazala je ranu sposobnost u vizuelnoj umetnosti i, nakon što se porodica preselila u Stokholm, studirala je na Tekniskoj školi (danas Konstfack) u Stokholmu, gde je naučila portret i pejzažno slikarstvo.
@@ -89,16 +89,16 @@ const umetnice = {
         -Prikaz umetničkog procesa koji spaja intuiciju, sistem i meditativni izraz
         
         -Kontekst nastanka apstrakcije pre njenog zvaničnog priznanja u istoriji umetnosti`,
-        postavkaSlika: `/slike/hilma-af-klint/Hilma_af_Klint_-_The_Ten_Largest_No._6_-_1907.jpg`,
-        karticaSlikaPrva: `/slike/suzane-valadon/1357px-(Barcelona)_The_future_Revealed_or_the_Fortune-Teller_by_Suzanne_Valadon.jpg`,
+        postavkaSlika: `/galerija_aurea1/slike/hilma-af-klint/Hilma_af_Klint_-_The_Ten_Largest_No._6_-_1907.jpg`,
+        karticaSlikaPrva: `/galerija_aurea1/slike/suzane-valadon/1357px-(Barcelona)_The_future_Revealed_or_the_Fortune-Teller_by_Suzanne_Valadon.jpg`,
         karticaNaslovPrva: `Suzana Valadon
                             Boje i linije slobode`,
         karticaPrvaLink: "suzana",
-        karticaSlikaDruga: `/slike/artemiyija-djentileski/1465px-Jael_and_Sisera_by_Artemisia_Gentileschi.jpg`,
+        karticaSlikaDruga: `/galerija_aurea1/slike/artemiyija-djentileski/1465px-Jael_and_Sisera_by_Artemisia_Gentileschi.jpg`,
         karticaNaslovDruga: `Artemizija Đentileski
                             Snaga i Pravda`,
         karticaDrugaLink: "artemizija",
-        karticaSlikaTreca: `/slike/natalia-goncarova/Goncharova_Fighters.jpg`,
+        karticaSlikaTreca: `/galerija_aurea1/slike/natalia-goncarova/Goncharova_Fighters.jpg`,
         karticaNaslovTreca: `Natalija Gončarova
                             Ruski perspektivizam i apstrakcija`,
         karticaTrecaLink: "natalija"
@@ -106,12 +106,12 @@ const umetnice = {
 
 
     elizabet: {
-        zaglavljeSlika: `/slike/elizabet-vize-le-brun/Elisabeth_Louise_Vigée-Le_Brun_-_Juno_Borrowing_the_Belt_of_Venus,_1781.jpg`,
+        zaglavljeSlika: `/galerija_aurea1/slike/elizabet-vize-le-brun/Elisabeth_Louise_Vigée-Le_Brun_-_Juno_Borrowing_the_Belt_of_Venus,_1781.jpg`,
         nazivPostavke: `Elizabet Viže Lebran
         Ženski autorski glas u XVIII veku`,
         imeUmetnice: `ELIZABET
         VIŽE LEBRAN`,
-        portretUmetnice: `/slike/elizabet-vize-le-brun/Self-portrait_in_a_Straw_Hat_by_Elisabeth-Louise_Vigée-Lebrun.jpg`,
+        portretUmetnice: `/galerija_aurea1/slike/elizabet-vize-le-brun/Self-portrait_in_a_Straw_Hat_by_Elisabeth-Louise_Vigée-Lebrun.jpg`,
         
         oUmetnici: `Lujza Elizabet-Viže Lebran (fr. Élisabeth Vigée Le Brun; Pariz, 16. april 1755 - 30. mart 1842) bila je francuska slikarka[1] , najznačajniji portretista 18. veka, a po mišljenju mnogih umetnika i jedan od tehnički najveštijih portretista svog doba.
 
@@ -139,16 +139,16 @@ const umetnice = {
 
         -Kontekst društvenog i kulturnog položaja žena u Francuskoj i Evropi XVIII veka`,
         
-        postavkaSlika: `/slike/elizabet-vize-le-brun/Vigée-Lebrun_Marie_Antoinette_1783.jpg`,
-        karticaSlikaPrva: `/slike/judith-leyster/Judith_Leyster_The_Concert.jpg`,
+        postavkaSlika: `/galerija_aurea1/slike/elizabet-vize-le-brun/Vigée-Lebrun_Marie_Antoinette_1783.jpg`,
+        karticaSlikaPrva: `/galerija_aurea1/slike/judith-leyster/Judith_Leyster_The_Concert.jpg`,
         karticaNaslovPrva: `Džudit Lejster
                             Portreti i žanrovske scene`,
         karticaPrvaLink: "dzudit",
-        karticaSlikaDruga: `/slike/suzane-valadon/1357px-(Barcelona)_The_future_Revealed_or_the_Fortune-Teller_by_Suzanne_Valadon.jpg`,
+        karticaSlikaDruga: `/galerija_aurea1/slike/suzane-valadon/1357px-(Barcelona)_The_future_Revealed_or_the_Fortune-Teller_by_Suzanne_Valadon.jpg`,
         karticaNaslovDruga: `Suzana Valadon
                             Boje i linije slobode`,
         karticaDrugaLink: "suzana",
-        karticaSlikaTreca: `/slike/hilma-af-klint/Hilma_af_Klint,_1915,_Svanen,_No._17.jpg`,
+        karticaSlikaTreca: `/galerija_aurea1/slike/hilma-af-klint/Hilma_af_Klint,_1915,_Svanen,_No._17.jpg`,
         karticaNaslovTreca: `Hilma af Klint
                             Između nauke i duhovnosti`,
         karticaTrecaLink: "hilma"
@@ -157,12 +157,12 @@ const umetnice = {
 
 
         natalija: {
-        zaglavljeSlika: `/slike/natalia-goncarova/Goncharova_Fighters.jpg`,
+        zaglavljeSlika: `/galerija_aurea1/slike/natalia-goncarova/Goncharova_Fighters.jpg`,
         nazivPostavke: `Natalija Gončarova
         Ruski perspektivizam i apstrakcija`,
         imeUmetnice: `NATALIJA
         GONČAROVA`,
-        portretUmetnice: `/slike/natalia-goncarova/Natalia_Sergeyevna_Goncharova.jpg`,
+        portretUmetnice: `/galerija_aurea1/slike/natalia-goncarova/Natalia_Sergeyevna_Goncharova.jpg`,
         
         oUmetnici: `Natalija Sergejevna Gončarova (rus. Ната́лья Серге́евна Гончаро́ва; Tula, 4. jun 1881 — Pariz, 17. oktobar 1962) bila je ruski avangardni slikar, kostimograf, pisac, ilustrator i scenski dizajner. Njena prababa-tetka bila je Natalija Nikolajevna Gončarova, žena pesnika Aleksandra Puškina.
 
@@ -185,16 +185,16 @@ const umetnice = {
 
         -Prikaz umetničkog otklona od akademskih normi i razvoja modernog vizuelnog jezika`,
         
-        postavkaSlika: `/slike/natalia-goncarova/Babi_s_grablyami.jpg`,
-        karticaSlikaPrva: `/slike/elizabet-vize-le-brun/Elisabeth_Louise_Vigée-Le_Brun_-_Juno_Borrowing_the_Belt_of_Venus,_1781.jpg`,
+        postavkaSlika: `/galerija_aurea1/slike/natalia-goncarova/Babi_s_grablyami.jpg`,
+        karticaSlikaPrva: `/galerija_aurea1/slike/elizabet-vize-le-brun/Elisabeth_Louise_Vigée-Le_Brun_-_Juno_Borrowing_the_Belt_of_Venus,_1781.jpg`,
         karticaNaslovPrva: `Elizabet Viže Lebran
                             Ženski autorski glas u XVIII veku`,
         karticaPrvaLink: "elizabet",
-        karticaSlikaDruga: `/slike/suzane-valadon/1357px-(Barcelona)_The_future_Revealed_or_the_Fortune-Teller_by_Suzanne_Valadon.jpg`,
+        karticaSlikaDruga: `/galerija_aurea1/slike/suzane-valadon/1357px-(Barcelona)_The_future_Revealed_or_the_Fortune-Teller_by_Suzanne_Valadon.jpg`,
         karticaNaslovDruga: `Suzana Valadon
                             Boje i linije slobode`,
         karticaDrugaLink: "suzana",
-        karticaSlikaTreca: `/slike/hilma-af-klint/Hilma_af_Klint,_1915,_Svanen,_No._17.jpg`,
+        karticaSlikaTreca: `/galerija_aurea1/slike/hilma-af-klint/Hilma_af_Klint,_1915,_Svanen,_No._17.jpg`,
         karticaNaslovTreca: `Hilma af Klint
                             Između nauke i duhovnosti`,
         karticaTrecaLink: "hilma"
@@ -203,12 +203,12 @@ const umetnice = {
 
 
         dzudit: {
-        zaglavljeSlika: `/slike/judith-leyster/Judith_Leyster_The_Concert.jpg`,
+        zaglavljeSlika: `/galerija_aurea1/slike/judith-leyster/Judith_Leyster_The_Concert.jpg`,
         nazivPostavke: `Džudit Lejster
         Portreti i žanrovske scene`,
         imeUmetnice: `DŽUDIT
         LEJSTER`,
-        portretUmetnice: `/slike/judith-leyster/Self-portrait_by_Judith_Leyster.jpg`,
+        portretUmetnice: `/galerija_aurea1/slike/judith-leyster/Self-portrait_by_Judith_Leyster.jpg`,
         
         oUmetnici: `Džudit Jans Lejster (takođe Lejster; Harlem, — Himstede, 10. februar 1660) bila je holandska slikarka zlatnog doba žanrovskih dela, portreta i mrtvih priroda. Njen rad je bio veoma cenjen od strane savremenika, ali je uglavnom zaboravljen nakon njene smrti. Ceo opus Džudit Lejster se pripisuje Fransu Halsu ili njenom mužu Janu Miensu Molenaeru. Godine 1893. ponovo je otkriven njen rad i naučnici su počeli da pravilno pripisuju autorstvo slika Lejster.
 
@@ -232,16 +232,16 @@ const umetnice = {
 
         -Kontekst njenog umetničkog identiteta i položaja žene u okviru holandskog zlatnog doba`,
         
-        postavkaSlika: `/slike/judith-leyster/Judith_Leyster_The_Proposition.jpg`,
-        karticaSlikaPrva: `/slike/artemiyija-djentileski/1465px-Jael_and_Sisera_by_Artemisia_Gentileschi.jpg`,
+        postavkaSlika: `/galerija_aurea1/slike/judith-leyster/Judith_Leyster_The_Proposition.jpg`,
+        karticaSlikaPrva: `/galerija_aurea1/slike/artemiyija-djentileski/1465px-Jael_and_Sisera_by_Artemisia_Gentileschi.jpg`,
         karticaNaslovPrva: `Artemizija Đentileski
         Snaga i Pravda`,
         karticaPrvaLink: "artemizija",
-        karticaSlikaDruga: `/slike/suzane-valadon/1357px-(Barcelona)_The_future_Revealed_or_the_Fortune-Teller_by_Suzanne_Valadon.jpg`,
+        karticaSlikaDruga: `/galerija_aurea1/slike/suzane-valadon/1357px-(Barcelona)_The_future_Revealed_or_the_Fortune-Teller_by_Suzanne_Valadon.jpg`,
         karticaNaslovDruga: `Suzana Valadon
         Boje i linije slobode`,
         karticaDrugaLink: "suzana",
-        karticaSlikaTreca: `/slike/natalia-goncarova/Goncharova_Fighters.jpg`,
+        karticaSlikaTreca: `/galerija_aurea1/slike/natalia-goncarova/Goncharova_Fighters.jpg`,
         karticaNaslovTreca: `Natalija Gončarova
         Ruski perspektivizam i apstrakcija`,
         karticaTrecaLink: "natalija"
@@ -250,12 +250,12 @@ const umetnice = {
 
 
         suzana: {
-        zaglavljeSlika: `/slike/suzane-valadon/1357px-(Barcelona)_The_future_Revealed_or_the_Fortune-Teller_by_Suzanne_Valadon.jpg`,
+        zaglavljeSlika: `/galerija_aurea1/slike/suzane-valadon/1357px-(Barcelona)_The_future_Revealed_or_the_Fortune-Teller_by_Suzanne_Valadon.jpg`,
         nazivPostavke: `Suzana Valadon
         Boje i linije slobode`,
         imeUmetnice: `SUZANA
         VALADON`,
-        portretUmetnice: `/slike/suzane-valadon/Suzanne_Valadon_-_Self-Portrait_-_Google_Art_Project.jpg`,
+        portretUmetnice: `/galerija_aurea1/slike/suzane-valadon/Suzanne_Valadon_-_Self-Portrait_-_Google_Art_Project.jpg`,
         
         oUmetnici: `Rođena pod imenom Meri-Klementina Valadon (Marie-Clémentine Valadon) u Bessines-sur-Gartempe, Haute-Vienne, Francuska, bila je ćerka nevenčanih roditelja, i sa svojih 15 godina Suzan Valadon postaje cirkuski akrobata, ali već sa 16 godina pada sa trapeza i tako završava tu karijeru. U Monmartrovskoj četvrti Pariza ona počinje da se interesuje za umetnost.
         
@@ -280,16 +280,16 @@ const umetnice = {
 
         -Kontekst Valadoninog mesta u razvoju ranog modernizma i njenog uticaja na savremenu umetnost`,
         
-        postavkaSlika: `/slike/suzane-valadon/Suzanne_Valadon_-_Femme_aux_bas_blancs.jpg`,
-        karticaSlikaPrva: `/slike/judith-leyster/Judith_Leyster_The_Concert.jpg`,
+        postavkaSlika: `/galerija_aurea1/slike/suzane-valadon/Suzanne_Valadon_-_Femme_aux_bas_blancs.jpg`,
+        karticaSlikaPrva: `/galerija_aurea1/slike/judith-leyster/Judith_Leyster_The_Concert.jpg`,
         karticaNaslovPrva: `Džudit Lejster
         Portreti i žanrovske scene`,
         karticaPrvaLink: "dzudit",
-        karticaSlikaDruga: `/slike/hilma-af-klint/Hilma_af_Klint,_1915,_Svanen,_No._17.jpg`,
+        karticaSlikaDruga: `/galerija_aurea1/slike/hilma-af-klint/Hilma_af_Klint,_1915,_Svanen,_No._17.jpg`,
         karticaNaslovDruga: `Hilma af Klint
         Između nauke i duhovnosti`,
         karticaDrugaLink: "hilma",
-        karticaSlikaTreca: `/slike/natalia-goncarova/Goncharova_Fighters.jpg`,
+        karticaSlikaTreca: `/galerija_aurea1/slike/natalia-goncarova/Goncharova_Fighters.jpg`,
         karticaNaslovTreca: `Natalija Gončarova
         Ruski perspektivizam i apstrakcija`,
         karticaTrecaLink: "natalija"
