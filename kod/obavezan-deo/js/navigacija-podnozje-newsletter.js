@@ -25,6 +25,47 @@ fetch("/galerija_aurea1/kod/obavezan-deo/html/navigacija.html")
             postaviKolacic("tema", "svetla", "30");
         });
     })
+
+    const povecajFontDugme = document.querySelectorAll(".veci-font-dugme");
+    const smanjiFontDugme = document.querySelectorAll(".manji-font-dugme");
+
+    const sacuvanFont = uzmiKolacic("font");
+
+    if (sacuvanFont === "veci") {
+        document.body.classList.add("promeni-font-veci");
+    }
+
+    if (sacuvanFont === "manji") {
+        document.body.classList.add("promeni-font-manji");
+    }
+
+    povecajFontDugme.forEach(dugme => {
+        dugme.addEventListener("click", () => {
+            if(document.body.classList.contains("promeni-font-manji")){
+                document.body.classList.remove("promeni-font-manji");
+                postaviKolacic("font", "normalan", "30");
+                console.log("Normalan font");
+            } else {
+                document.body.classList.add("promeni-font-veci");
+                postaviKolacic("font", "veci", "30");
+                console.log("Veci font");
+            }
+        });
+    });
+
+    smanjiFontDugme.forEach(dugme => {
+        dugme.addEventListener("click", () => {
+            if (document.body.classList.contains("promeni-font-veci")) {
+                document.body.classList.remove("promeni-font-veci");
+                postaviKolacic("font", "normalan", "30");
+                console.log("Normalan font");
+            } else {
+                document.body.classList.add("promeni-font-manji");
+                postaviKolacic("font", "manji", "30");
+                console.log("Manji font");
+            }
+        });
+    });
     
 
     const hamburgerMeni = document.querySelector(".hamburger-meni");

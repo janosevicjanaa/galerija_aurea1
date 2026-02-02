@@ -143,6 +143,25 @@ nav{
     cursor: pointer;
 }
 
+.menjanje-fonta{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+.veci-font-dugme, .manji-font-dugme{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.font-ikonica{
+    height: 20px;
+    width: 20px;
+}
+
 .padajuci-meni{
     position: relative;
 }
